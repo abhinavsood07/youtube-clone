@@ -1,0 +1,16 @@
+p{
+    font-family: Roboto, arial;
+    
+}
+body{
+    padding-left: 85px;
+    padding-top: 60px;
+    padding-right: 25px;
+    
+    background-color: rgb(241, 241, 241);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}

@@ -1,0 +1,146 @@
+.whole-grid {
+    row-gap: 20px;
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+@media (max-width:700px) {
+    .whole-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.video-preview {
+    /* display: inline-block; */
+    min-width: 200px;
+    /* margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;  */
+
+
+}
+
+.thumbnail-row {
+    position: relative;
+
+
+}
+
+.thumbnail {
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.time {
+    position: absolute;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: roboto, arial;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    bottom: 10px;
+    right: 4px;
+}
+
+.description-grid {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+
+    /* min-width: 250px; */
+}
+
+.profile-picture {
+    /* display: inline-block; */
+    width: 40px;
+    /* height: 40px; */
+    border-radius: 50px;
+    vertical-align: top;
+
+
+}
+
+.pfp-box {
+    position: relative;
+}
+
+.pfp-box .channel-overview {
+    background-color: white;
+    position: absolute;
+    display: flex;
+    border-radius: 3px;
+    bottom: -20px;
+    display: flex;
+    width: 250px;
+    padding: 10px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.pfp-box:hover .channel-overview {
+    opacity: 1;
+}
+
+.channel-overview-imgbox {
+    margin-right: 6px;
+    /* padding: 5px; */
+}
+
+.channel-overview-imgbox img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+
+}
+
+.channel-overview-textbox {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 5px;
+}
+
+.textbox-name {
+    font-weight: 600;
+    font-family: roboto, arial;
+    font-size: 16px;
+    margin-bottom: 6px;
+
+}
+
+.textbox-subs {
+    color: gray;
+    font-size: 14px;
+    font-family: roboto, arial;
+
+}
+
+.title,
+.name,
+.views {
+    margin-left: 10px;
+}
+
+.title {
+
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.name {
+    margin-top: 0px;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.views {
+    margin-top: 0px;
+    font-size: 14px;
+}
